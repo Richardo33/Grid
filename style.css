@@ -1,0 +1,106 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+.container {
+  border: solid;
+  display: grid;
+  grid-template-areas: "side main";
+  grid-template-columns: 3fr 7fr;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.container .side{
+  background-color: aqua;
+  display: grid;
+  grid-template-areas:"logo logo logo"
+                      "profile profile profile"
+                      "post followers following"
+                      "feed feed feed"
+                      "explore explore explore"
+                      "logout logout logout";
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr;
+}
+
+.container .side .logo{
+  background-color: gray;
+  grid-area: logo;
+  display: flex;
+  padding-left: 3em;
+/*   justify-content: center; */
+  align-items: center;
+}
+
+.container .side .logo img{
+  height : auto;
+  width: 13em;
+  
+}
+
+.container .side .profile{
+  background-color: pink;
+  grid-area: profile;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+/*   padding: 3em 0em; */
+}
+
+.container .side .profile img{
+  height: 13em;
+  width: 13em;
+  border-radius: 50%;
+  
+}
+
+.container .side .post{
+  background-color: green;
+  grid-area: post;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .side .followers{
+  background-color: blue;
+  grid-area: followers;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .side .following {
+  background-color:white;
+  grid-area:following;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .side .feed{
+  background-color: yellow;
+  grid-area: feed;
+  display: flex;
+ align-items: center;
+}
+
+.container .side .explore{
+  background-color: purple;
+  grid-area: explore;
+  display: flex;
+align-items: center;
+}
+
+.container .side .logout{
+  grid-area: logout;
+  display: flex;
+align-items: center;
+}
+
+.container .main{
+  background-color: #0079F2;
+}

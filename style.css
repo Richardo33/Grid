@@ -61,6 +61,7 @@ grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr;
   background-color: green;
   grid-area: post;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -69,6 +70,7 @@ grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr;
   background-color: blue;
   grid-area: followers;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -77,6 +79,7 @@ grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr;
   background-color:white;
   grid-area:following;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
